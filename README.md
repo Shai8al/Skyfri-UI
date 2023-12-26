@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Skyfri UI - Tenant CRUD Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a CRUD (Create, Read, Update, Delete) UI application built using React.js for managing tenant data. The app utilizes Axios for making API requests and Bootstrap for styling.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+To get started, follow these steps:
 
-### `npm start`
+1. Clone this repository:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    ```bash
+    git clone <repository-url>
+    cd skyfri-ui
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Install dependencies:
 
-### `npm test`
+    ```bash
+    npm install
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Install Axios and Bootstrap:
 
-### `npm run build`
+    ```bash
+    npm install axios
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    npm i --save bootstrap
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Configuration
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app requires updating the API URL in `/src/components/TenantCrud.jsx` file to connect to the backend API for CRUD operations. Locate the methods for Create, Read, Update, and Delete in this file and update the API URL accordingly.
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Run the application:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This will start the development server and launch the application in your default web browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Application Structure
+### Tenant CRUD Interface
 
-## Learn More
+The UI consists of two main parts:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Registration and Update Form:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ - Use the top part of the application to enter new tenant information.
+ - This section serves for both tenant registration and updating existing tenant data.
 
-### Code Splitting
+2. Tenant Table:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ - The lower part of the application displays a table containing the list of registered tenants.
+ - It provides a view of all the previously registered tenants.
