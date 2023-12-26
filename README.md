@@ -9,11 +9,7 @@ To get started, follow these steps:
 1. Clone this repository:
 
     ```bash
-<<<<<<< HEAD
-    git clone <repository-url>
-=======
     git clone https://github.com/Shai8al/Skyfri-UI.git
->>>>>>> b192d01976a8ab2e9436370ef46e3995b91c2a77
     cd skyfri-ui
     ```
 
